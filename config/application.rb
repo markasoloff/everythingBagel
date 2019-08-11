@@ -31,5 +31,7 @@ module EverythingBagle
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    config.assets.js_compressor = Uglifier.new(harmony: true)
+
   end
 end
